@@ -1,0 +1,47 @@
+ul,li{margin:0;padding:0;list-style:none}
+
+#DB_navi39 a{text-decoration:none;display:block}
+#DB_navi39 img{border:0;vertical-align:top}
+
+#DB_navi39{position:relative; width:170px;height:55px; padding-top: 15px ;}
+#DB_navi39 ul{width:175px;margin:0 auto }
+#DB_navi39 ul li{border-right:1px solid #cccccc; text-indent:15px;}
+#DB_navi39 ul li.m2{width:145px}
+
+
+#DB_navi39 ul li.DB_main{float:left; position:relative; padding-left: 15px;}
+#DB_navi39 ul li.DB_main a{font:11px "돋움";color:#666666;line-height:40px;;background:url('../img/arrow.gif') no-repeat right 10px}/*�޴�����*/
+#DB_navi39 ul li.DB_main a:hover{color:#333333;background-position:right -27px}
+#DB_navi39 ul li.DB_main.DB_select a{color:#333333;background-position:}
+
+
+#DB_navi39 .DB_main .DB_sub{position:absolute;left:0 ;top:40px; width:100%; display:none;background:#ffffff; border:1px solid #cccccc; border-width:1px 1px 0; margin-left: -1px}
+#DB_navi39 .DB_main .DB_sub li{border:none;border-bottom:1px solid #cccccc; text-indent:30px;}
+#DB_navi39 .DB_main .DB_sub li a{color:#666666;line-height:40px;background:#ffffff;}
+#DB_navi39 .DB_main .DB_sub li a:hover{color:#ffffff;background:#666666;}
+#DB_navi39 .DB_main .DB_sub li.DB_select a{color:#ffffff;background:#666666; width:145px;padding-left: 15px;}
+
+
+
+
+#DB_navi38 a{text-decoration:none;display:block}
+#DB_navi38 img{border:0;vertical-align:top}
+
+#DB_navi38{position:relative; width:200px;height:45px;  border:solid #cccccc; border-width: 0px 1px; padding-top: 5px ;}
+#DB_navi38 ul{width:200px;margin:0 auto}
+#DB_navi38 ul li{ text-indent:15px;}
+#DB_navi38 ul li.m2{width: 200px}
+#DB_navi38 ul li.m3{width: 200px}
+
+
+#DB_navi38 ul li.DB_main{float:left; position:relative}
+#DB_navi38 ul li.DB_main a{font:11px ����;color:#666666;line-height: 40px;;background:url('../img/arrow.gif') no-repeat right 10px}/*�޴�����*/
+#DB_navi38 ul li.DB_main a:hover{color:#333333;background-position:right -27px}
+#DB_navi38 ul li.DB_main.DB_select a{color:#333333;background-position:right -27px}
+
+
+#DB_navi38 .DB_main .DB_sub{position:absolute;left:0; top:40px; width:100%; display:none;background:#ffffff;border:1px solid #cccccc;border-width:1px 1px 0;margin-left:-1px}
+#DB_navi38 .DB_main .DB_sub li{border:none;border-bottom:1px solid #cccccc;  text-indent:15px;}
+#DB_navi38 .DB_main .DB_sub li a{color:#666666;line-height:40px;background:#ffffff}
+#DB_navi38 .DB_main .DB_sub li a:hover{color:#ffffff;background:#666666}
+#DB_navi38 .DB_main .DB_sub li.DB_select a{color:#ffffff;background:#666666}

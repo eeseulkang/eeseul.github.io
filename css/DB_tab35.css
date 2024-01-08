@@ -1,0 +1,24 @@
+
+#d_tab35 {width: 1336px; height:783px;position:relative;overflow:hidden; left:284px;}
+
+#d_tab35 .img{position:relative;}
+#d_tab35 .img li{position:absolute;width:1336px; height: 783px;display:none}
+#d_tab35 .img li:first-child{display:block}
+
+#d_tab35 .img li.l1{background: url(../img/info.png)no-repeat;}
+#d_tab35 .img li.l2{background: url(../img/info.png)no-repeat;}
+#d_tab35 .img li.l3{background: url(../img/info.png)no-repeat;}
+#d_tab35 .img li.l4{background: url(../img/info.png)no-repeat;}
+
+
+#d_tab35 .img li .d_container{position:relative;width:1000px;margin:0 auto}
+#d_tab35 .img li.l1 .motion{position:absolute;left:0;top:100px}/*margin ������*/
+#d_tab35 .img li.l2 .motion{position:absolute;left:250px;top:100px}/*margin ������*/
+#d_tab35 .img li.l3 .motion{position:absolute;left:0;top:100px}/*margin ������*/
+#d_tab35 .img li.l4 .motion{position:absolute;left:250px;top:100px}/*margin ������*/
+
+
+
+
+#d_tab35 .arrow{position: absolute; top: 807px; left: 313px; cursor:pointer;z-index:10}
+#d_tab35 .next{} 
