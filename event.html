@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LUSH</title>   
+        <!--드롭다운메뉴-->
+        <link rel="stylesheet" href="css/DB_navi39.css" type="text/css"></link>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script><!--jquery-->
+        <script type="text/javascript" src="js/jquery.DB_navi2D.min.js"></script><!--메뉴플러그인-->
+        <!--올라오는 애니메이션-->
+        <link rel="stylesheet" href="css/DB_etc12.css" type="text/css"></link>
+        <script type="text/javascript" src="js/jquery.DB_subVisual.min.js"></script>
+
+        <!--aos-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!--sping move-->
+        <link rel="stylesheet" href="css/DB_etc10.css" type="text/css"></link>
+        <script type="text/javascript" src="js/jquery.DB_springMove.min.js"></script>
+
+        <!--btn-->
+        <link rel="stylesheet" href="button collect.css">
+
+
+        <style type="text/css">
+        *{margin: 0; padding: 0;}
+        #wrap{ width: 1920px;  margin: auto; overflow: hidden;  position: relative;}
+        ul,li{list-style: none;} a{text-decoration: none; color: #101010;} a:hover{color: #fbe437;}
+        /*상단네비게이션*/
+        .navi{ width: 1920px; height: 375px;  position: relative;}
+        .logo{ padding: 30px 0px 30px 300px;  float: left;}
+
+        .topnavi{ height: 52px; float: left; padding-left: 416px; padding-top: 33px;}
+        .topnavi>li{float: left; padding-left: 67px; font: 14pt/30px "Noto Sans CJK KR";}
+      
+
+        .help{ width: 100px; padding-top: 33px; padding-left: 66px; float: left; }
+        .help>li{ width: 21px; float: left;  padding-top: px; padding-right: 20px;}
+        .help>li:first-child{ } .help>li~li{ }
+        .help li~li:before {  }
+
+        .n_title{ padding-left: 420px; padding-top: 90px;}
+        .n_day{ padding-left: 420px; padding-top: 40px;}
+
+
+       
+        /*이벤트내용*/
+        .event{height: 4019px; background: url(img/bg.png)no-repeat;}
+        .visual{ width: 1920px; height: 802px;  position: relative; }
+          .light_1{ position: absolute; top: 94px; left: 355px;} .light_2{ position: absolute; top: 76px; left: 327px;}
+        .e_title{padding-left: 640px; padding-top: 195px;} .e_sub{position: absolute; top: 562px; left: 807px;}
+        .v_pum1{position: absolute; top: 503px; left: 507px;}  .v_pum2{position: absolute; top: 124px; left: 664px;} .v_pum3{position: absolute; top: 420px; left: 1305px;}
+        
+          .cont{  height: 3217px; margin-left: 300px; position: relative; background: url(img/c_bg.png)no-repeat;}
+          .c1{height: 945px; position: relative; }
+          .c_gho1{position: absolute; top: 406px; left: 154px;} .c_gho2{position: absolute; top: 722px; left: 1077px;}
+          .c1_t{position: absolute; top: 270px; left: 360px;} .c1_s{position: absolute; top: 370px; left: 450px;}
+          .video{padding-top: 460px; padding-left: 265px;}
+          .play{background:url(img/c1_play.png)no-repeat; width: 116px; height: 260px; position: absolute; top: 460px; left: 610px;} .play:hover{background:url(img/c1_play_h.png)no-repeat; position: absolute; top: 465px; left: 600px; }
+
+          .c2{height: 1488px; position: relative; margin-left: 124px;}
+          .c2_t{position: absolute; top: -6px; left: 282px;} .c2_s{position: absolute; top: 93px; left: 322px;}
+          .c2_plag{position: absolute; top:262px; left: -18px; }
+          .p1{padding-top: 159px; padding-left: 264px; float: left;} .pp1{position: absolute; top: 260px; left: 432px;}
+          .p2{padding-top: 158px; padding-left: 20px; float: left;} .pp2{position: absolute; top: 270px; left: 727px;}
+        
+          .list{  width: 729px; height: 938px; padding-top: 550px; padding-left: 176px;}
+          .s1{width: 210px; height: 339px; float: left;} .ss1{position: absolute; top: 752px; left: 242px;}
+          .s2{width: 210px; height: 339px; float: left; padding-left: 49px;} .ss2{position: absolute; top: 749px; left: 502px;}
+          .s3{width: 210px; height: 339px; float: left; padding-left: 50px;} .ss3{position: absolute; top: 748px; left: 723px;}
+          .s4{width: 210px; height: 339px; float: left; padding-top: 50px;} .ss4{position: absolute; top: 1153px; left: 232px;}
+          .s5{width: 210px; height: 339px; float: left; padding-left: 49px; padding-top: 50px;} .ss5{position: absolute; top: 1134px; left: 460px;}
+          .s6{width: 210px; height: 339px; float: left; padding-left: 50px; padding-top: 50px;} .ss6{position: absolute; top: 1132px; left: 723px;}
+          .c2_btn>a{width: 199px; height: 100px; background: url(img/c2_btn.png)no-repeat; position: absolute; top: 1328px; left: 442px;} .c2_btn>a:hover{background: url(img/c2_btn_h.png)no-repeat;}
+
+          .c3{height: 534px;  margin-left: 124px; position: relative;}
+          .c3_t{padding-left: 287px;} .c3_s{padding-left: 267px; padding-top: 41px;}
+          .c3_step{padding-left: 210px; padding-top: 57px; float: left;}
+          .c3_gho{ float: left; padding-left: 83px; padding-top: 50px;} .c3_gift{ position: absolute; top: 220px; left: 616px;}
+          .c3_btn>a{width: 199px; height: 100px; background: url(img/c3_but.png)no-repeat; position: absolute; top: 415px; left: 281px;} .c3_btn>a:hover{background: url(img/c3_btn_h.png)no-repeat;}
+
+
+          .c4{height: 250px;  margin-left: 124px;}
+          .c4_notice{padding-top: 18px; padding-left: 166px;  float: left;}
+          .top_btn{ float: left; padding-top: 149px; padding-left: 360px;}
+
+        /*푸터*/
+        .footer{ width: 1920px; height: 748px;   clear: both; position: relative; padding-top: 100px; background: url(img/footer_e.png)no-repeat;}
+        .f_btn>a{background: url(img/f_btn.png)no-repeat; width: 166px; height: 65px; position: absolute; left: 878px;}  .f_btn>a:hover{background: url(img/f_btn_h.png)no-repeat;}
+        .f2_btn{ padding-left: 1281px; padding-top: 334px;}
+        .f_menu{padding-top: 50px; padding-left: 420px;} .f_menu>li{padding-right: 40px; float: left;}
+        .f_sns{padding-left: 275px; float: left;}
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div class="navi">
+                <div class="logo"><img src="img/LOGO_e.png"></div>
+                <ul class="topnavi">
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                    <li><a href="#">러쉬 소개</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">스파</a></li>
+                </ul>
+                <ul class="help">
+                    <li><a href="#"><img src="img/navi_buy_.png"></a></li>
+                    <li><a href="#"><img src="img/navi_my.png"></a></li>
+                </ul>
+                <div class="n_map"><img src="img/map.png"></div>
+                <div class="n_title"><img src="img/n_title.png"></div>
+                <div class="n_day"><img src="img/n_day.png"></div>
+            </div>
+<!--상단메뉴끝-->
+            <div class="event">
+                <div class="visual">
+                    <div class="ev2_1">
+                        <ul>
+                            <li class="light_1"><img src="img/light_1.png"></li>
+                            <li class="light_2"><img src="img/light_2.png"></li>
+                        </ul>
+                    </div>
+                    <div class="e_title"><img src="img/e_title.png"></div>
+                    <div class="e_sub"><div data-aos="fade-down" data-aos-offset="300" aos-duration="2000"data-aos-easing="ease-in-out"><img src="img/e_sub.png"></div></div>
+                    <div class="v_pum1 sp1"><img src="img/v_pum1.png"></div>
+                    <div class="v_pum2 sp2"><img src="img/v_pum2.png"></div>
+                    <div class="v_pum3 sp1"><img src="img/v_pum3.png"></div>
+                   
+                </div>
+
+                <div class="cont">
+                    <div class="c1">
+                        <div class="c_gho1 sp1"><img src="img/c_ghost1.png"></div>
+                        <div class="c_gho2 sp3"><img src="img/c_ghost2.png"></div>
+                        <div class="c1_t"><div data-aos="fade-down" data-aos-offset="300" aos-duration="2000"data-aos-easing="ease-in-out"><img src="img/c1_t.png"></div></div>
+                        <div class="c1_s"><div data-aos="fade-down" data-aos-offset="400" aos-duration="3000"data-aos-easing="ease-in-out"><img src="img/c1_s.png"></div></div>
+                        <div class="video"><img src="img/c1_vedeo.png"></div>
+                        <div class="play"><a href="#"></a></div>
+                    </div>
+
+                    <div class="c2">
+                        <div class="c2_t"><div data-aos="fade-down" data-aos-offset="300" aos-duration="2000"><img src="img/c2_t.png"></div></div>
+                        <div class="c2_s"><div data-aos="fade-down" data-aos-offset="400" aos-duration="3000"><img src="img/c2_s.png"></div></div>
+                        <div class="c2_plag"><img src="img/c2_plag.png"></div>
+                        <div class="p1"><img src="img/c2_p1.png"></div>
+                        <div class="pp1"><div data-aos="fade-left" data-aos-offset="100" aos-duration="500"data-aos-easing="ease-in-out"><img src="img/c2_pp1.png"></div></div>
+                        <div class="p2"><img src="img/c2_p2.png"></div>
+                        <div class="pp2"><div data-aos="fade-left" data-aos-offset="200" aos-duration="1000"data-aos-easing="ease-in-out"><img src="img/c2_pp2.png"></div></div>
+                    
+                        <ul class="list">
+                          <li class="s1"><img src="img/c2_s1.png"></li>
+                          <li class="ss1"><div data-aos="fade-up" data-aos-offset="100" aos-duration="1000"data-aos-easing="ease-in-out"><img src="img/c2_ss1.png"></div></li>
+                          <li class="s2"><img src="img/c2_s2.png"></li>
+                          <li class="ss2"><div data-aos="fade-up" data-aos-offset="200" aos-duration="2000"data-aos-easing="ease-in-out"><img src="img/c2_ss2.png"></div></li>
+                          <li class="s3"><img src="img/c2_s3.png"></li>
+                          <li class="ss3"><div data-aos="fade-up" data-aos-offset="300" aos-duration="3000"data-aos-easing="ease-in-out"><img src="img/c2_ss3.png"></div></li>
+                          <li class="s4"><img src="img/c2_s4.png"></li>
+                          <li class="ss4"><div data-aos="fade-up" data-aos-offset="100" aos-duration="1000"data-aos-easing="ease-in-out"><img src="img/c2_ss4.png"></div></li>
+                          <li class="s5"><img src="img/c2_s5.png"></li>
+                          <li class="ss5"><div data-aos="fade-up" data-aos-offset="200" aos-duration="2000"data-aos-easing="ease-in-out"><img src="img/c2_ss5.png"></div></li>
+                          <li class="s6"><img src="img/c2_s6.png"></li>
+                          <li class="ss6"><div data-aos="fade-up" data-aos-offset="300" aos-duration="3000"data-aos-easing="ease-in-out"><img src="img/c2_ss6.png"></div></li>
+
+                          <li class="c2_btn"><a href="#"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="c3">
+                        <div class="c3_t"><div data-aos="fade-down" data-aos-offset="300" aos-duration="2000"data-aos-easing="ease-in-out"><img src="img/c3_t.png"></div></div>
+                        <div class="c3_s"><div data-aos="fade-down" data-aos-offset="400" aos-duration="3000"data-aos-easing="ease-in-out"><img src="img/c3_s.png"></div></div>
+                        <div class="c3_step"><img src="img/c3_step.png"></div>
+                        <div class="c3_gho"><div data-aos="fade-up" data-aos-offset="300" aos-duration="2000"data-aos-easing="ease-in-out"><img src="img/c3_gho.png"></div></div>
+                        <div class="c3_gift"><img src="img/c3_gift.png"></div>
+                        <div class="c3_btn"><a href="#"></a></div>
+                    </div>
+
+                    <div class="c4">
+                        <div class="c4_notice"><img src="img/c4_notice.png"></div>
+                        <div class="top_btn"><a href="#"><img src="img/top_btn.png"></a></div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="footer">
+                 <div class="f_btn"><a href="#"></a></div>
+                 <div class="f2_btn"><a href="#"><img src="img/f2_btn.png"></a></div>
+                 <ul class="f_menu">
+                     <li><a href="#"><img src="img/f_menu1.png"></a></li>
+                     <li><a href="#"><img src="img/f_menu2.png"></a></li>
+                     <li><a href="#"><img src="img/f_menu3.png"></a></li>
+                     <li><a href="#"><img src="img/f_menu4.png"></a></li>
+                     <li><a href="#"><img src="img/f_menu5.png"></a></li>
+                     <li><a href="#"><img src="img/f_menu6.png"></a></li>
+                 </ul>
+                 <div class="f_sns"><a href="#"><img src="img/f_sns.png"></a></div>
+                 </div>
+         
+        </div>
+
+
+
+			
+
+         <!--반짝이-->
+    
+    <script>
+        $(function(){
+             $(".ev2_1 ul li").eq(0).fadeIn();  
+            setInterval(function(){
+                $(".ev2_1 ul li").eq(0).fadeOut().appendTo(".ev2_1 ul");  
+                $(".ev2_1 ul li").eq(0).fadeIn();},800) 
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+ 
+
+    <!--반짝이 끝-->
+
+    <script>
+   
+        $('.sp1').DB_springMove({
+          key:'c65806',                //라이센스키
+          dir:'y',               //방향축('x','y')
+          mirror:1,              //반대방향이동(1,-1)
+          radius:4,             //반경
+          motionSpeed:0.08       //속도(0~1)
+        })
+        $('.sp2').DB_springMove({
+          key:'c65806',                //라이센스키
+          dir:'y',               //방향축('x','y')
+          mirror:1,              //반대방향이동(1,-1)
+          radius:5,             //반경
+          motionSpeed:0.05       //속도(0~1)
+        })
+        $('.sp3').DB_springMove({
+          key:'c65806',                //라이센스키
+          dir:'y',               //방향축('x','y')
+          mirror:1,              //반대방향이동(1,-1)
+          radius:3,             //반경
+          motionSpeed:0.1       //속도(0~1)
+        })
+      
+      </script>
+
+    
+    </body>
+</html>
